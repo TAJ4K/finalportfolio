@@ -18,7 +18,13 @@
             <a href="tel:+14255011802">>>phone</a>
           </div>
         </div>
-        <div id="what" class="w-1/2 h-[12.5rem]"></div>
+        <div id="what" class="w-1/2 h-[12.5rem] flex justify-center">
+          <img
+            src="../../public/ComputerSpin.gif"
+            alt="a laptop spinning"
+            class="h-full"
+          />
+        </div>
       </div>
     </div>
   </div>
