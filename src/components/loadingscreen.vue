@@ -3,13 +3,13 @@ https://dev.to/dd8888/how-to-create-a-simple-loading-screen-using-vue-4h7m
 
 <template>
   <div
-    class="absolute bg-cyan-700 h-screen w-screen text-center z-[100] leading-[100vh]"
+    class="absolute bg-cyan-700 h-full w-screen text-center z-[100] leading-[100vh]"
   >
     <img
       class="relative m-auto mt-[20%]"
       src="../../public/dialingprogress.gif"
       alt="loading..."
-      width="200"
+      width="250"
     />
   </div>
 </template>
