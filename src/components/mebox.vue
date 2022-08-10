@@ -2,9 +2,9 @@
   <div class="flex justify-center">
     <div class="text-center w-[40rem] min-w-[20rem] h-[14rem] bg-yellow-400">
       <div id="header" class="justify-between flex relative bg-orange-600">
-        <div class="w-1/3"></div>
+        <div class="w-1/3 text-left">{{ time }}</div>
         <div class="w-1/3">ME :)))</div>
-        <div class="w-1/3 text-right">{{ time }}</div>
+        <div class="w-1/3 text-right">You are visitor #{{ count }}</div>
       </div>
       <div id="meBody" class="flex px-4">
         <div
@@ -40,12 +40,18 @@ export default defineComponent({
   data() {
     return {
       time: "",
+      count: 0,
     };
   },
   mounted() {
     setInterval(() => {
       this.time = new Date().toLocaleTimeString();
     }, 1000);
+    fetch("https://gentle-castle-49906.herokuapp.com/query")
+      .then((res) => res.json())
+      .then((data) => {
+        this.count = data.count;
+      });
   },
 });
 </script>
