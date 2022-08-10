@@ -14,8 +14,8 @@
       <img
         id="ie"
         src="../public/best_viewed_with.jpg"
-        class="fixed h-[10%] bottom-0 left-0 z-[1000]"
-        v-if="!isLoading"
+        class="fixed h-24 bottom-0 left-0"
+        v-if="!isLoading && !tooSmall"
       />
     </div>
   </div>
@@ -38,12 +38,16 @@ export default defineComponent({
   data() {
     return {
       isLoading: true,
+      tooSmall: false,
     };
   },
   mounted() {
     setTimeout(() => {
       this.isLoading = false;
     }, 2000);
+    window.onresize = () => {
+      this.tooSmall = window.innerWidth < 945;
+    };
   },
 });
 </script>
