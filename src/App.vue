@@ -1,12 +1,13 @@
 <template>
   <div :class="{ 'mx-16': !isLoading }">
+    <img
+      src="../public/wordart.png"
+      alt="Kobe Rankich"
+      class="block ml-auto mr-auto py-4 w-96 h-auto"
+      :class="{ hidden: isLoading }"
+    />
     <LoadingScreen v-if="isLoading"></LoadingScreen>
     <div v-else id="content">
-      <img
-        src="../public/wordart.png"
-        alt="Kobe Rankich"
-        class="block ml-auto mr-auto pt-4 w-96 h-auto"
-      />
       <MeBox />
       <SablesProject />
       <SablesProject />
