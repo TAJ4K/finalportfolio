@@ -44,6 +44,7 @@ export default defineComponent({
     };
   },
   mounted() {
+    this.time = new Date().toLocaleTimeString();
     setInterval(() => {
       this.time = new Date().toLocaleTimeString();
     }, 1000);
