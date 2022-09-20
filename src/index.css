@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 * {
     cursor: url('/public/cursor/frame1.png'), auto;
     animation: cursor 800ms infinite;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
 }
 
 @keyframes cursor {
@@ -28,7 +28,10 @@ body::-webkit-scrollbar {
     100% {cursor: url('/public/cursor/frame6.png'), auto;}
 }
 
-/* Specific styles that are easier to write in CSS than Tailwind */
+/* //Specific styles that are easier to write in CSS than Tailwind
 #content > *:not(#ie) {
+  margin-bottom: 2rem;
+} */
+.spacer {
   margin-bottom: 2rem;
 }
