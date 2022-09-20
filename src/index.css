@@ -6,6 +6,7 @@
 body {
     background-image: url('/public/stars.jpg');
     overflow-x: hidden;
+    background-color: black;
 }
 
 body::-webkit-scrollbar {
