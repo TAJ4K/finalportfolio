@@ -6,9 +6,7 @@
         <div>2022</div>
       </div>
       <hr class="border-black" />
-      <div
-        class="px-1 flex flex-col justify-between h-[11.5rem] sm:h-[13.5rem]"
-      >
+      <div class="px-1 flex flex-col justify-between h-[12rem] sm:h-[13.5rem]">
         <p>
           Client-side tool that uses Amazon's Rekognition API to help identify
           blurry images for those who struggle with their vision online.

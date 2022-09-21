@@ -25,7 +25,7 @@
           <img
             src="@/../public/computer.png"
             alt="gif of a computer"
-            class="h-48"
+            class="h-32 sm:h-48"
           />
         </div>
       </div>
