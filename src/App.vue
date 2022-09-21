@@ -25,6 +25,7 @@
         id="ie"
         src="../public/best_viewed_with.jpg"
         class="fixed h-24 bottom-0 left-0"
+        alt="Best viewed with Internet Explorer"
         v-if="!isLoading && !tooSmall"
       />
     </div>
