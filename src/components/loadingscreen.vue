@@ -5,13 +5,17 @@ https://dev.to/dd8888/how-to-create-a-simple-loading-screen-using-vue-4h7m
   <div
     class="absolute bg-cyan-700 h-full w-screen text-center z-[100] leading-[100vh]"
   >
-    <img
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
       class="relative m-auto mt-[20%]"
-      src="../../public/dialingprogress.gif"
+      src="../../public/dialingprogress.mp4"
       alt="loading..."
       width="250"
       v-if="isMobile"
-    />
+    ></video>
     <video
       autoplay
       loop
