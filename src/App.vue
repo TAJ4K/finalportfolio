@@ -1,7 +1,7 @@
 <template>
   <div :class="{ 'mx-16': !isLoading }">
     <img
-      src="../public/wordart.png"
+      src="../public/wordart.webp"
       alt="Kobe Rankich"
       class="block ml-auto mr-auto py-4 w-96 h-auto"
       :class="{ hidden: isLoading }"
@@ -23,7 +23,7 @@
       <div class="spacer"></div>
       <img
         id="ie"
-        src="../public/best_viewed_with.jpg"
+        src="../public/best_viewed_with.webp"
         class="fixed h-24 bottom-0 left-0"
         alt="Best viewed with Internet Explorer"
         v-if="!isLoading && !tooSmall"
