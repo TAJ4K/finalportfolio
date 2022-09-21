@@ -19,6 +19,8 @@
         </div>
       </div>
       <div class="spacer"></div>
+      <GruxProject />
+      <div class="spacer"></div>
       <img
         id="ie"
         src="../public/best_viewed_with.jpg"
@@ -37,6 +39,7 @@ import LoadingScreen from "./components/loadingscreen.vue";
 import SablesProject from "./projects/SablesProject.vue";
 import PkgProject from "./projects/PkgProject.vue";
 import GoFPSProject from "./projects/GoFPSProject.vue";
+import GruxProject from "./projects/GruxProject.vue";
 
 export default defineComponent({
   name: "App",
@@ -46,6 +49,7 @@ export default defineComponent({
     SablesProject,
     PkgProject,
     GoFPSProject,
+    GruxProject,
   },
   data() {
     return {
